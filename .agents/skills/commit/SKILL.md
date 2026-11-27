@@ -16,6 +16,9 @@ description: 사용자가 $commit 으로 호출하면 변경 내용을 읽고 Co
 
 - 형식: type(scope): 제목 (scope는 생략 가능)
 - type: feat, fix, docs, style, refactor, test, chore
+- 제목과 본문은 한글로 작성한다. type과 scope, 기술명과 코드 식별자는 원문을 유지한다.
+- 영어로 작성한 메시지 초안은 커밋 전에 제목과 본문을 한글로 번역한다.
+- 예시: feat: Spring Boot 데모 프로젝트 초기 구성
 - 제목은 50자 이내로 쓰고 마침표를 붙이지 않는다.
 - 이유가 필요하면 한 줄을 비우고 본문을 쓴다.
 - AI 도구 표기(Co-authored-by 등)를 넣지 않는다.

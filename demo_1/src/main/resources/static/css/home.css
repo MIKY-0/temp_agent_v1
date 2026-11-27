@@ -1,0 +1,27 @@
+:root { color-scheme: dark; font-family: system-ui, -apple-system, "Segoe UI", sans-serif; color: #ecf4f6; background: #0b1118; }
+* { box-sizing: border-box; }
+body { margin: 0; }
+main { width: min(1120px, 90%); margin: auto; }
+header, footer { display: flex; justify-content: space-between; gap: 20px; align-items: center; }
+header { padding: 30px 0; border-bottom: 1px solid #26313d; font-size: 14px; color: #a4b1bd; }
+.brand { color: #edf6f8; font-weight: 800; text-decoration: none; letter-spacing: .14em; }
+.intro { padding: 52px 0 32px; }
+.eyebrow { color: #5ce5cf; font-size: 12px; letter-spacing: .2em; font-weight: 700; }
+h1 { font-size: clamp(32px, 5vw, 56px); letter-spacing: -.05em; margin: 12px 0 18px; }
+.intro > p:last-child { color: #a4b1bd; line-height: 1.8; margin: 0; }
+.stage { position: relative; height: clamp(360px, 52vh, 580px); border: 1px solid #2b3b49; border-radius: 24px; overflow: hidden; background: radial-gradient(ellipse at 50% 40%, #1c3a43, #101b26 65%); }
+#scene { width: 100%; height: 100%; touch-action: none; }
+canvas { display: block; width: 100%; height: 100%; }
+#scene-status { position: absolute; top: 45%; width: 100%; padding: 0 24px; text-align: center; color: #c8dedf; pointer-events: none; }
+#scene-status[hidden] { display: none; }
+.stage-label { position: absolute; left: 24px; top: 24px; display: flex; flex-direction: column; gap: 10px; pointer-events: none; font-size: 14px; color: #a4b1bd; }
+.tag { font-size: 12px; color: #75f0db; letter-spacing: .15em; }
+.controls { position: absolute; bottom: 22px; left: 50%; transform: translateX(-50%); display: flex; gap: 10px; white-space: nowrap; }
+button { font: inherit; font-size: 14px; border-radius: 100px; padding: 12px 20px; border: 1px solid #597782; background: #142934e8; color: #edf6f8; cursor: pointer; }
+button:first-child { background: #9cf5dd; color: #112d2c; border-color: #9cf5dd; }
+button:hover { filter: brightness(1.12); }
+button:focus-visible, a:focus-visible { outline: 3px solid #fff; outline-offset: 4px; }
+button:disabled { opacity: .45; cursor: wait; }
+footer { padding: 22px 0 32px; color: #94a7b8; font-size: 14px; }
+.notice { text-align: center; padding: 20px; }
+@media (max-width: 600px) { header > span { display: none; } .intro { padding-top: 32px; } footer { align-items: flex-start; flex-direction: column; gap: 8px; } .stage-label { left: 18px; top: 18px; } }
